@@ -36,7 +36,7 @@
     "editor.mouseWheelZoom": true,
     "editor.smoothScrolling": true,
     "editor.suggest.maxVisibleSuggestions": 10,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120,
     "editor.wrappingIndent": "indent",
@@ -123,6 +123,9 @@
     "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
     "typescript.suggest.completeFunctionCalls": true,
     // Python
+    ["python"]: {
+        "editor.tabSize": 4
+    },
     "python.pythonPath": "VIRTUALENV_PATH/bin/python3",
     "python.autoComplete.extraPaths": [
         "VIRTUALENV_PATH/lib/python3.7.1/site-packages"
