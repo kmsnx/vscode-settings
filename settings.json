@@ -123,7 +123,7 @@
     "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
     "typescript.suggest.completeFunctionCalls": true,
     // Python
-    ["python"]: {
+    "[python]": {
         "editor.tabSize": 4
     },
     "python.pythonPath": "VIRTUALENV_PATH/bin/python3",
