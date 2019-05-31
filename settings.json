@@ -114,13 +114,9 @@
     "css.lint.universalSelector": "warning",
     "css.lint.zeroUnits": "warning",
     // JavaScript
-    "javascript.format.insertSpaceAfterConstructor": true,
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "javascript.implicitProjectConfig.checkJs": true,
     "javascript.suggest.completeFunctionCalls": true,
     // TypeScript
-    "typescript.format.insertSpaceAfterConstructor": true,
-    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
     "typescript.suggest.completeFunctionCalls": true,
     // Python
     "[python]": {
@@ -144,4 +140,5 @@
     "python.testing.pyTestEnabled": true,
     "python.testing.nosetestsEnabled": false,
     "editor.suggestSelection": "first",
+    "window.zoomLevel": 0,
 }
