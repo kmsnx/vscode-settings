@@ -125,7 +125,7 @@
     "typescript.suggest.completeFunctionCalls": true,
     // Python
     "[python]": {
-        "editor.tabSize": 4,
+        "editor.tabSize": 4
     },
     "python.pythonPath": "VIRTUALENV_PATH/bin/python3",
     "python.autoComplete.extraPaths": [
@@ -140,10 +140,10 @@
     "python.linting.lintOnSave": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
-        "--max-line-length=120",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=200"
     ],
-    "python.linting.pep8Args": [
+    "python.linting.flake8Args": [
         "--max-line-length=120",
     ],
     "python.linting.ignorePatterns": [
