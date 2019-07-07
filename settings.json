@@ -121,8 +121,17 @@
     // JavaScript
     "javascript.implicitProjectConfig.checkJs": true,
     "javascript.suggest.completeFunctionCalls": true,
-    // TypeScript
-    "typescript.suggest.completeFunctionCalls": true,
+    // Vue
+    "[vue]": {
+        "prettier.singleQuote": true,
+        "typescript.preferences.quoteStyle": "single",
+        "javascript.preferences.quoteStyle": "single",
+        "vetur.format.defaultFormatterOptions": {
+            "prettier": {
+                "singleQuote": true
+            }
+        },
+    },
     // Python
     "[python]": {
         "editor.tabSize": 4
@@ -149,5 +158,5 @@
     "python.linting.ignorePatterns": [
         ".vscode/*.py",
         "**/site-packages/**/*.py"
-    ]
+    ],
 }
