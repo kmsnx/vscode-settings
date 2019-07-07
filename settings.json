@@ -105,6 +105,22 @@
     "git.autoStash": true,
     "git.fetchOnPull": true,
     "gitlens.blame.ignoreWhitespace": true,
+    // ESLint
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "html",
+            "autoFix": true
+        },
+        {
+            "language": "javascript",
+            "autoFix": true
+        }
+    ],
     // HTML
     "html.format.endWithNewline": true,
     "html.format.indentHandlebars": true,
@@ -121,15 +137,13 @@
     // JavaScript
     "javascript.implicitProjectConfig.checkJs": true,
     "javascript.suggest.completeFunctionCalls": true,
+    "javascript.preferences.quoteStyle": "single",
     // Vue
-    "[vue]": {
-        "prettier.singleQuote": true,
-        "typescript.preferences.quoteStyle": "single",
-        "javascript.preferences.quoteStyle": "single",
-        "vetur.format.defaultFormatterOptions": {
-            "prettier": {
-                "singleQuote": true
-            }
+    "vetur.format.defaultFormatterOptions": {
+        "prettier": {
+            "singleQuote": true,
+            "eslintIntegration": true,
+            "trailingComma": "all",
         },
     },
     // Python
