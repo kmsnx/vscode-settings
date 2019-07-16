@@ -44,6 +44,7 @@
         120
     ],
     // Files
+    "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -99,10 +100,6 @@
     "yaml.format.printWidth": 120,
     // Git
     "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "git.autofetch": true,
-    "git.autofetchPeriod": 1800,
-    "git.autoStash": true,
     "git.fetchOnPull": true,
     "gitlens.blame.ignoreWhitespace": true,
     // ESLint
@@ -157,7 +154,7 @@
     "python.jediEnabled": false,
     "python.formatting.provider": "autopep8",
     "python.testing.unittestEnabled": true,
-    "python.testing.pyTestEnabled": true,
+    "python.testing.pytestEnabled": true,
     "python.testing.nosetestsEnabled": false,
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
@@ -173,4 +170,6 @@
         ".vscode/*.py",
         "**/site-packages/**/*.py"
     ],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggestSelection": "first",
 }
