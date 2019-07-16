@@ -35,6 +35,7 @@
     "editor.insertSpaces": true,
     "editor.mouseWheelZoom": true,
     "editor.smoothScrolling": true,
+    "editor.suggestSelection": "first",
     "editor.suggest.maxVisibleSuggestions": 10,
     "editor.tabSize": 2,
     "editor.wordWrap": "wordWrapColumn",
@@ -92,15 +93,18 @@
     "update.mode": "manual",
     // Breadcrumbs
     "breadcrumbs.enabled": true,
-    // Other
+    // IntelliCode
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // Atlassian
+    "atlascode.jira.workingSite": {
+        "baseUrlSuffix": "atlassian.net"
+    },
     // Merge Conflicts
     "merge-conflict.autoNavigateNextConflict.enabled": true,
-    // Yaml
-    "yaml.format.printWidth": 120,
     // Git
-    "git.confirmSync": false,
     "git.fetchOnPull": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
     "gitlens.blame.ignoreWhitespace": true,
     // ESLint
     "eslint.autoFixOnSave": true,
@@ -118,6 +122,11 @@
             "autoFix": true
         }
     ],
+    // YAML
+    "yaml.format.printWidth": 120,
+    "yaml.schemas": {
+        "file:///Users/marcinkaminski/.vscode/extensions/atlassian.atlascode-1.4.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
     // HTML
     "html.format.endWithNewline": true,
     "html.format.indentHandlebars": true,
@@ -135,6 +144,7 @@
     "javascript.implicitProjectConfig.checkJs": true,
     "javascript.suggest.completeFunctionCalls": true,
     "javascript.preferences.quoteStyle": "single",
+    "javascript.updateImportsOnFileMove.enabled": "always",
     // Vue
     "vetur.format.defaultFormatterOptions": {
         "prettier": {
@@ -170,6 +180,4 @@
         ".vscode/*.py",
         "**/site-packages/**/*.py"
     ],
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.suggestSelection": "first",
 }
