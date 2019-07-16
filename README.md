@@ -7,7 +7,7 @@ Enjoy!
 
 ### Install
 - Settings: Just copy everything from my settings.json file and paste it to your 'settings.json' in VS Code.
-- Extensions: `./extensions.sh`
+- Extensions: Run script `./extensions.sh`
 
 
 ### Styles
