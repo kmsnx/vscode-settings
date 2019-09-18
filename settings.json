@@ -124,6 +124,7 @@
     ],
     // YAML
     "yaml.format.printWidth": 120,
+    "yaml.format.singleQuote": true,
     "yaml.schemas": {
         "file:///Users/marcinkaminski/.vscode/extensions/atlassian.atlascode-1.4.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
@@ -147,19 +148,26 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     // Vue
     "vetur.format.defaultFormatterOptions": {
-        "prettier": {
+        "js": {
             "singleQuote": true,
             "eslintIntegration": true,
             "trailingComma": "all",
+            "printWidth": 100
+        },
+        "vue": {
+            "singleQuote": true,
+            "eslintIntegration": true,
+            "trailingComma": "all",
+            "printWidth": 100
         },
     },
     // Python
     "[python]": {
         "editor.tabSize": 4
     },
-    "python.pythonPath": "VIRTUALENV_PATH/bin/python3",
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3",
     "python.autoComplete.extraPaths": [
-        "VIRTUALENV_PATH/lib/python3.7.1/site-packages"
+        "VIRTUALENV_PATH/lib/python3.7.2/site-packages"
     ],
     "python.jediEnabled": false,
     "python.formatting.provider": "autopep8",
