@@ -1,29 +1,20 @@
-code --install-extension atlassian.atlascode
-code --install-extension christian-kohler.path-intellisense
-code --install-extension CoenraadS.bracket-pair-colorizer
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension eamodio.gitlens
-code --install-extension eg2.vscode-npm-script
-code --install-extension Gruntfuggly.todo-tree
-code --install-extension joelday.docthis
-code --install-extension mauve.terraform
-code --install-extension Mikael.Angular-BeastCode
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-python.python
-code --install-extension ms-vscode.cpptools
-code --install-extension ms-vscode.csharp
-code --install-extension ms-vscode.vscode-typescript-tslint-plugin
-code --install-extension msjsdiag.vscode-react-native
-code --install-extension octref.vetur
-code --install-extension redhat.java
-code --install-extension redhat.vscode-yaml
-code --install-extension sdras.vue-vscode-snippets
-code --install-extension VisualStudioExptTeam.vscodeintellicode
-code --install-extension vscjava.vscode-java-debug
-code --install-extension vscjava.vscode-java-dependency
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vscjava.vscode-java-test
-code --install-extension vscjava.vscode-maven
-code --install-extension vscode-icons-team.vscode-icons
-code --install-extension Zignd.html-css-class-completion
+christian-kohler.npm-intellisense
+christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+dsznajder.es7-react-js-snippets
+eamodio.gitlens
+eg2.vscode-npm-script
+esbenp.prettier-vscode
+Gruntfuggly.todo-tree
+hollowtree.vue-snippets
+joelday.docthis
+mauve.terraform
+ms-azuretools.vscode-docker
+ms-python.python
+msjsdiag.vscode-react-native
+octref.vetur
+redhat.vscode-yaml
+VisualStudioExptTeam.vscodeintellicode
+vscode-icons-team.vscode-icons
+Zignd.html-css-class-completion
