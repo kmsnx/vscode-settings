@@ -1,17 +1,17 @@
-aaron-bond.better-comments
-christian-kohler.path-intellisense
-CoenraadS.bracket-pair-colorizer
-dbaeumer.vscode-eslint
-dsznajder.es7-react-js-snippets
-eamodio.gitlens
-ecmel.vscode-html-css
-eg2.vscode-npm-script
-Gruntfuggly.todo-tree
-michelemelluso.code-beautifier
-ms-python.python
-naumovs.color-highlight
-octref.vetur
-syler.sass-indented
-vscode-icons-team.vscode-icons
-xabikos.JavaScriptSnippets
-Zignd.html-css-class-completion
+code --install-extension aaron-bond.better-comments
+code --install-extension christian-kohler.path-intellisense
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension eamodio.gitlens
+code --install-extension ecmel.vscode-html-css
+code --install-extension eg2.vscode-npm-script
+code --install-extension Gruntfuggly.todo-tree
+code --install-extension michelemelluso.code-beautifier
+code --install-extension ms-python.python
+code --install-extension naumovs.color-highlight
+code --install-extension octref.vetur
+code --install-extension syler.sass-indented
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension xabikos.JavaScriptSnippets
+code --install-extension Zignd.html-css-class-completion
