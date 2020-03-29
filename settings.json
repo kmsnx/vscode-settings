@@ -1,6 +1,6 @@
 {
     // Window
-    "window.restoreFullscreen": true,
+    "window.zoomLevel": -1,
     // Workbench
     "workbench.commandPalette.history": 0,
     "workbench.statusBar.feedback.visible": false,
@@ -9,8 +9,7 @@
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "vscode-icons",
     // Editor
-    "editor.acceptSuggestionOnEnter": "on",
-    "editor.accessibilitySupport": "auto",
+    "editor.minimap.enabled": false,
     "editor.autoClosingBrackets": "languageDefined",
     "editor.autoClosingQuotes": "languageDefined",
     "editor.autoIndent": true,
@@ -25,9 +24,8 @@
     "editor.fontFamily": "Menlo, Monaco, Consolas, 'Droid Sans Mono', Inconsolata, 'Courier New', monospace",
     "editor.fontLigatures": false,
     "editor.fontSize": 12,
-    "editor.fontWeight": "100",
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.formatOnSaveTimeout": 1000,
     "editor.gotoLocation.multiple": "goto",
     "editor.hover.delay": 200,
@@ -37,13 +35,6 @@
     "editor.smoothScrolling": true,
     "editor.suggestSelection": "first",
     "editor.suggest.maxVisibleSuggestions": 10,
-    "editor.tabSize": 2,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 120,
-    "editor.wrappingIndent": "indent",
-    "editor.rulers": [
-        120
-    ],
     // Files
     "files.eol": "\n",
     "files.insertFinalNewline": true,
@@ -96,10 +87,6 @@
     "breadcrumbs.enabled": true,
     // IntelliCode
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    // Atlassian
-    "atlascode.jira.workingSite": {
-        "baseUrlSuffix": "atlassian.net"
-    },
     // Merge Conflicts
     "merge-conflict.autoNavigateNextConflict.enabled": true,
     // Git
@@ -108,33 +95,19 @@
     "git.enableSmartCommit": true,
     "gitlens.blame.ignoreWhitespace": true,
     // ESLint
+    "eslint.enable": true,
+    "eslint.run": "onSave",
+    "eslint.alwaysShowStatus": true,
     "eslint.autoFixOnSave": true,
     "eslint.validate": [
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "html",
-            "autoFix": true
-        },
-        {
-            "language": "javascript",
-            "autoFix": true
-        }
+        "javascript",
+        "vue",
+        "html"
     ],
-    // YAML
-    "yaml.format.printWidth": 120,
-    "yaml.format.singleQuote": true,
-    "yaml.schemas": {
-        "file:///Users/marcinkaminski/.vscode/extensions/atlassian.atlascode-1.4.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    },
     // HTML
     "html.format.endWithNewline": true,
     "html.format.indentHandlebars": true,
     "html.format.indentInnerHtml": true,
-    "html.format.wrapAttributes": "aligned-multiple",
-    "html.format.wrapLineLength": 120,
     // CSS
     "css.lint.boxModel": "warning",
     "css.lint.float": "warning",
@@ -142,48 +115,74 @@
     "css.lint.important": "warning",
     "css.lint.universalSelector": "warning",
     "css.lint.zeroUnits": "warning",
+    // SASS & SCSS
+    "[scss]": {
+        "sass.lint.enable": true,
+    },
     // JavaScript
-    "javascript.implicitProjectConfig.checkJs": true,
-    "javascript.suggest.completeFunctionCalls": true,
+    "[javascript]": {
+        "editor.tabSize": 4,
+    },
     "javascript.preferences.quoteStyle": "single",
+    "javascript.preferences.renameShorthandProperties": true,
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "javascript.implicitProjectConfig.checkJs": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.autoClosingTags": true,
+    "javascript.suggest.completeFunctionCalls": true,
     // TypeScript
     "typescript.format.enable": false,
     "typescript.validate.enable": false,
     "typescript.suggest.enabled": false,
     "vsintellicode.typescript.completionsEnabled": false,
+    "typescript.preferences.quoteStyle": "single",
     "javascript.validate.enable": false,
     // Vue
     "vetur.format.defaultFormatterOptions": {
         "[vue, js]": {
             "singleQuote": true,
             "eslintIntegration": true,
-            "trailingComma": "all",
-            "printWidth": 100
         },
     },
     // Python
     "[python]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.autoClosingQuotes": "languageDefined",
     },
-    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3",
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3",
     "python.autoComplete.extraPaths": [
-        "VIRTUALENV_PATH/lib/python3.7.2/site-packages"
+        "/usr/local/bin/python3"
     ],
+    "python.sortImports.args": [
+        "-rc",
+        "--atomic"
+    ],
+    "python.autoComplete.addBrackets": true,
     "python.jediEnabled": false,
     "python.formatting.provider": "autopep8",
-    "python.testing.unittestEnabled": true,
     "python.testing.pytestEnabled": true,
-    "python.testing.nosetestsEnabled": false,
     "python.linting.enabled": true,
-    "python.linting.lintOnSave": true,
+    "python.linting.lintOnSave": false,
     "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.formatting.autopep8Args": [
-        "--max-line-length=200"
-    ],
-    "python.linting.flake8Args": [
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestyleArgs": [
         "--max-line-length=120",
+        "--max-doc-length=120",
+        "--max-line-length",
+        "120",
+        "--in-place",
+        "--aggressive"
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "120",
+        "--in-place",
+        "--aggressive"
+    ],
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120",
+        "--single-quotes"
     ],
     "python.linting.ignorePatterns": [
         ".vscode/*.py",
