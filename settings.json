@@ -108,6 +108,8 @@
     "eslint.enable": true,
     "eslint.run": "onSave",
     "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
     "eslint.validate": [
         "javascript",
         "vue",
@@ -131,7 +133,7 @@
     // JavaScript
     "[javascript]": {
         "editor.tabSize": 4,
-        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     },
     "javascript.preferences.quoteStyle": "single",
     "javascript.preferences.renameShorthandProperties": true,
@@ -144,9 +146,14 @@
     "typescript.format.enable": false,
     "typescript.validate.enable": false,
     "typescript.suggest.enabled": false,
-    "vsintellicode.typescript.completionsEnabled": false,
     "typescript.preferences.quoteStyle": "single",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vsintellicode.typescript.completionsEnabled": false,
     "javascript.validate.enable": false,
+    // TypeScript React .tsx
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
     // Vue
     "vetur.format.defaultFormatterOptions": {
         "[vue, js]": {
