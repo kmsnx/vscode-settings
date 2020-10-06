@@ -3,6 +3,7 @@ code --install-extension christian-kohler.path-intellisense
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension DotJoshJohnson.xml
 code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
@@ -13,13 +14,14 @@ code --install-extension hashicorp.terraform
 code --install-extension joelday.docthis
 code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension magicstack.MagicPython
+code --install-extension mikestead.dotenv
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.python
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vsliveshare.vsliveshare-pack
+code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension naumovs.color-highlight
 code --install-extension octref.vetur
-code --install-extension Orta.vscode-jest
 code --install-extension redhat.vscode-yaml
 code --install-extension syler.sass-indented
 code --install-extension thomas-baumgaertner.vcl
