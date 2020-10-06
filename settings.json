@@ -115,10 +115,17 @@
         "vue",
         "html"
     ],
+    // JSON
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     // HTML
     "html.format.endWithNewline": true,
     "html.format.indentHandlebars": true,
     "html.format.indentInnerHtml": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     // CSS
     "css.lint.boxModel": "warning",
     "css.lint.float": "warning",
@@ -136,17 +143,21 @@
         "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     },
     "javascript.preferences.quoteStyle": "single",
-    "javascript.preferences.renameShorthandProperties": true,
+    "javascript.preferences.useAliasesForRenames": true,
     "javascript.preferences.importModuleSpecifier": "non-relative",
     "javascript.implicitProjectConfig.checkJs": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.autoClosingTags": true,
     "javascript.suggest.completeFunctionCalls": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
     // TypeScript
     "typescript.format.enable": false,
     "typescript.validate.enable": false,
     "typescript.suggest.enabled": false,
     "typescript.preferences.quoteStyle": "single",
+    "typescript.preferences.useAliasesForRenames": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "vsintellicode.typescript.completionsEnabled": false,
     "javascript.validate.enable": false,
@@ -205,4 +216,3 @@
         ".vscode/*.py",
         "**/site-packages/**/*.py"
     ],
-}
