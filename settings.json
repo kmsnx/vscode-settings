@@ -119,6 +119,9 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     // HTML
     "html.format.endWithNewline": true,
     "html.format.indentHandlebars": true,
@@ -177,43 +180,42 @@
         "editor.tabSize": 4,
         "editor.autoClosingQuotes": "languageDefined",
     },
-    "python.pythonPath": "/usr/bin/python3",
+    "python.pythonPath": "/Users/marcin.kaminski/Library/Python/3.9/bin",
     "python.autoComplete.extraPaths": [
-        "/usr/local/bin/python3"
+        "/Users/marcin.kaminski/Library/Python/3.9/bin"
     ],
     "python.sortImports.args": [
         "-rc",
         "--atomic"
     ],
     "python.autoComplete.addBrackets": true,
-    "python.jediEnabled": false,
     "python.formatting.provider": "autopep8",
     "python.testing.pytestEnabled": true,
+    "python.linting.banditEnabled": true,
     "python.linting.enabled": true,
-    "python.linting.lintOnSave": false,
-    "python.linting.pylintEnabled": false,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": true,
     "python.linting.pycodestyleEnabled": true,
+    "python.linting.pylintPath": "/Users/marcin.kaminski/Library/Python/3.9/bin/pylint",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django",
+        "--in-place",
+        "--aggressive"
+    ],
     "python.linting.pycodestyleArgs": [
         "--max-line-length=120",
-        "--max-doc-length=120",
-        "--max-line-length",
-        "120",
-        "--in-place",
-        "--aggressive"
-    ],
-    "python.formatting.autopep8Args": [
-        "--max-line-length",
-        "120",
-        "--in-place",
-        "--aggressive"
-    ],
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "120",
-        "--single-quotes"
     ],
     "python.linting.ignorePatterns": [
         ".vscode/*.py",
-        "**/site-packages/**/*.py"
-    ]
+        "**/site-packages/**/*.py",
+        "**/.git",
+        "**/.svn",
+        "**/.hg",
+        "**/CVS",
+        "**/.DS_Store",
+        "**/*.pyc",
+        "**/__pycache__/"
+    ],
+    "python.languageServer": "Microsoft",
 }
