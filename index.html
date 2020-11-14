@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Interpolation in Animations</title>
+  </head>
+  <style>
+    html,
+    body {
+      width: 100vw;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: "Courier New", Courier, monospace;
+      background-color: black;
+      color: white;
+      position: absolute;
+    }
+
+    #header {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      background: transparent;
+    }
+
+    #nav {
+      margin: 16px;
+      letter-spacing: 0;
+    }
+
+    #nav-list {
+      list-style-type: none;
+      list-style: none;
+      margin: 0 auto;
+    }
+
+    #nav-list > li:not(:last-child)::after {
+      content: "|";
+      margin: 0 0 0 0.5em;
+    }
+
+    #nav-list > li {
+      display: inline;
+    }
+
+    #nav-list > li > a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    #nav-list > li > a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
+    #canvas {
+        width: 100vw;
+        min-height: 100vh;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+  </style>
+
+  <body>
+    <header id="header">
+      <h1>Linear interpolation in animations</h1>
+      <nav id="nav" role="navigation">
+        <ul id="nav-list">
+          <li><input id="withBallLerp" type="checkbox">Lerp on ball</li>
+          <li><input id="withScrollLerp" type="checkbox">Lerp on scroll</li>
+          <li><input id="lerpStep" type="number" value="0.1" min="0.001" max="1">Lerp Step</li>
+        </ul>
+        </nav>
+    </header>
+
+    <canvas id="canvas"></canvas>
+  </body>
+
+  <script>
+    const lerp = (currentPosition, targetPosition, step) => ({
+      x: currentPosition.x + (targetPosition.x - currentPosition.x) * step,
+      y: currentPosition.y + (targetPosition.y - currentPosition.y) * step,
+    });
+
+    // ANIMATION
+    const canvas = document.querySelector("#canvas");
+    const ctx = canvas.getContext("2d");
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    const cursor = {
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 2,
+    };
+    const ball = {
+      x: cursor.x,
+      y: cursor.y,
+    }
+    let lerpStep = 0.1;
+    const withBallLerp = true;
+    const withScrollLerp = true;
+    const withImagesLerp = true;
+
+    const drawBall = () => {
+      ctx.beginPath();
+
+      const {x, y} = withBallLerp ? lerp(ball, cursor, lerpStep) : cursor;
+      ball.x = x;
+      ball.y = y;
+
+      ctx.arc(ball.x, ball.y, 40, 0, 2 * Math.PI);
+      ctx.fillStyle = '#9c88ff';
+      ctx.fill();
+    };
+
+    const loop = () => {
+      ctx.clearRect(0, 0, width, height);
+      drawBall();
+      requestAnimationFrame(loop);
+    };
+
+    const handleCoursorMovement = (e) => {
+      const touch = e.originalEvent?.touches?.[0];
+      cursor.x = touch?.pageX ?? e.pageX;
+      cursor.y = touch?.pageY ?? e.pageY;
+    };
+
+    const resize = () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    };
+
+    loop();
+    resize();
+
+    window.addEventListener("resize", resize);
+    window.addEventListener("touchstart", handleCoursorMovement);
+    window.addEventListener("touchmove", handleCoursorMovement);
+    window.addEventListener("mousemove", handleCoursorMovement);
+    document.querySelector('#withBallLerp').addEventListener('click', ({ target: { checked } }) => {
+      withBallLerp = checked;
+    });
+    document.querySelector('#lerpStep').addEventListener('change', ({target: { value }}) => {
+      lerpStep = Number(value);
+    });
+  </script>
+</html>
