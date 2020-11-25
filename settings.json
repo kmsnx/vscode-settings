@@ -1,6 +1,6 @@
 {
     // Window
-    "window.zoomLevel": -2,
+    "window.zoomLevel": -1,
     // Workbench
     "workbench.commandPalette.history": 0,
     "workbench.statusBar.feedback.visible": false,
@@ -156,14 +156,15 @@
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     // TypeScript
-    "typescript.format.enable": false,
-    "typescript.validate.enable": false,
-    "typescript.suggest.enabled": false,
+    "typescript.format.enable": true,
+    "typescript.validate.enable": true,
+    "typescript.suggest.enabled": true,
     "typescript.preferences.quoteStyle": "single",
     "typescript.preferences.useAliasesForRenames": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "vsintellicode.typescript.completionsEnabled": false,
-    "javascript.validate.enable": false,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "vsintellicode.typescript.completionsEnabled": true,
+    "javascript.validate.enable": true,
     // TypeScript React .tsx
     "[typescriptreact]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -218,4 +219,8 @@
         "**/__pycache__/"
     ],
     "python.languageServer": "Microsoft",
-}
+    // C++
+    "C_Cpp.updateChannel": "Insiders",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
