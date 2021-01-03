@@ -94,6 +94,8 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     // Merge Conflicts
     "merge-conflict.autoNavigateNextConflict.enabled": true,
+    // Languages
+    "cSpell.language": "en,pl",
     // Git
     "git.autofetch": true,
     "git.fetchOnPull": true,
@@ -104,6 +106,12 @@
     "liveshare.populateGitCoAuthors": "never",
     "liveshare.allowGuestDebugControl": true,
     "liveshare.allowGuestTaskControl": true,
+    // Prettier
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "all",
+    "prettier.semi": true,
+    "prettier.printWidth": 100,
     // ESLint
     "eslint.enable": true,
     "eslint.run": "onSave",
@@ -116,11 +124,9 @@
         "html"
     ],
     // JSON
+    "json.format.enable": true,
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "vscode.json-language-features",
     },
     // HTML
     "html.format.endWithNewline": true,
@@ -142,8 +148,8 @@
     },
     // JavaScript
     "[javascript]": {
-        "editor.tabSize": 4,
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "javascript.preferences.quoteStyle": "single",
     "javascript.preferences.useAliasesForRenames": true,
@@ -153,7 +159,7 @@
     "javascript.autoClosingTags": true,
     "javascript.suggest.completeFunctionCalls": true,
     "[javascriptreact]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     // TypeScript
     "typescript.format.enable": true,
@@ -174,12 +180,12 @@
         "[vue, js]": {
             "singleQuote": true,
             "eslintIntegration": true,
-        },
+        }
     },
     // Python
     "[python]": {
         "editor.tabSize": 4,
-        "editor.autoClosingQuotes": "languageDefined",
+        "editor.autoClosingQuotes": "languageDefined"
     },
     "python.pythonPath": "/Users/marcin.kaminski/Library/Python/3.9/bin",
     "python.autoComplete.extraPaths": [
@@ -205,7 +211,7 @@
         "--aggressive"
     ],
     "python.linting.pycodestyleArgs": [
-        "--max-line-length=120",
+        "--max-line-length=120"
     ],
     "python.linting.ignorePatterns": [
         ".vscode/*.py",
@@ -223,4 +229,5 @@
     "C_Cpp.updateChannel": "Insiders",
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
+    }
+}
