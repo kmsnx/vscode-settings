@@ -1,233 +1,203 @@
 {
-    // Window
-    "window.zoomLevel": -1,
-    // Workbench
-    "workbench.commandPalette.history": 0,
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.editor.swipeToNavigate": true,
-    "workbench.editor.tabSizing": "shrink",
-    "workbench.startupEditor": "none",
-    "workbench.iconTheme": "vscode-icons",
-    // Editor
-    "editor.minimap.enabled": false,
-    "editor.autoClosingBrackets": "languageDefined",
-    "editor.autoClosingQuotes": "languageDefined",
-    "editor.autoIndent": "full",
-    "editor.autoSurround": "languageDefined",
-    "editor.codeLens": true,
-    "editor.colorDecorators": true,
-    "editor.copyWithSyntaxHighlighting": true,
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.cursorStyle": "line-thin",
-    "editor.detectIndentation": true,
-    "editor.fontFamily": "Menlo, Monaco, Consolas, 'Droid Sans Mono', Inconsolata, 'Courier New', monospace",
-    "editor.fontLigatures": false,
-    "editor.fontSize": 12,
-    "editor.formatOnPaste": true,
+  // Window
+  "window.zoomLevel": -1,
+  // Workbench
+  "workbench.commandPalette.history": 0,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "vscode-icons",
+  // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "editor.autoClosingBrackets": "languageDefined",
+  "editor.autoClosingQuotes": "languageDefined",
+  "editor.autoIndent": "full",
+  "editor.autoSurround": "languageDefined",
+  "editor.codeLens": true,
+  "editor.colorDecorators": true,
+  "editor.copyWithSyntaxHighlighting": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorStyle": "line-thin",
+  "editor.detectIndentation": true,
+  "editor.fontFamily": "Menlo, Monaco, Consolas, 'Droid Sans Mono', Inconsolata, 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "editor.gotoLocation.multipleImplementations": "peek",
+  "editor.gotoLocation.multipleDeclarations": "peek",
+  "editor.insertSpaces": true,
+  "editor.smoothScrolling": true,
+  "editor.suggestSelection": "first",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  // Files
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/CVS": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/.pytest_cache": true,
+    "**/.coverage": true,
+    "**/.pyc": true,
+    "**/.tox": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/build": true
+  },
+  // Search
+  "search.exclude": {
+    "**/CVS": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/.pytest_cache": true,
+    "**/.coverage": true,
+    "**/.pyc": true,
+    "**/.tox": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/build": true
+  },
+  "search.useGlobalIgnoreFiles": true,
+  // Telemetry
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  // Languages
+  "cSpell.language": "en,pl,sv",
+  // Git
+  "git.autofetch": true,
+  "git.fetchOnPull": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "gitlens.blame.ignoreWhitespace": true,
+  // Live Share
+  "liveshare.populateGitCoAuthors": "never",
+  "liveshare.allowGuestDebugControl": true,
+  "liveshare.allowGuestTaskControl": true,
+  // ESLint
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+    "typescriptreact",
+    "javascriptreact",
+    "javascript",
+    "typescript",
+    "html",
+    "vue"
+  ],
+  // SVG
+  "svg.preview.mode": "svg",
+  // JSON
+  "json.format.enable": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // HTML
+  "html.format.endWithNewline": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // CSS
+  "css.lint.float": "warning",
+  "css.lint.zeroUnits": "error",
+  "css.lint.boxModel": "warning",
+  "css.lint.important": "warning",
+  "css.lint.duplicateProperties": "error",
+  "css.lint.universalSelector": "warning",
+  // SASS & SCSS
+  "[scss]": {
+    "sass.lint.enable": true
+  },
+  // JavaScript / Typescript
+  "[javascript,javascriptreact,typescript,typescriptreact]": {
     "editor.formatOnSave": false,
-    "editor.gotoLocation.multipleImplementations": "peek",
-    "editor.gotoLocation.multipleDeclarations": "peek",
-    "editor.hover.delay": 200,
-    "editor.hover.enabled": true,
-    "editor.insertSpaces": true,
-    "editor.mouseWheelZoom": true,
-    "editor.smoothScrolling": true,
-    "editor.suggestSelection": "first",
-    "editor.suggest.maxVisibleSuggestions": 10,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.fixAll.eslint": true
-    },
-    // Files
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "files.autoSave": "onFocusChange",
-    "files.exclude": {
-        "**/CVS": true,
-        "**/node_modules": true,
-        "**/__pycache__": true,
-        "**/.DS_Store": true,
-        "**/.git": true,
-        "**/.vscode": true,
-        "**/.pytest_cache": true,
-        "**/.coverage": true,
-        "**/.pyc": true,
-        "**/.tox": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/build": true
-    },
-    // Search
-    "search.exclude": {
-        "**/CVS": true,
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/__pycache__": true,
-        "**/.DS_Store": true,
-        "**/.git": true,
-        "**/.vscode": true,
-        "**/.pytest_cache": true,
-        "**/.coverage": true,
-        "**/.pyc": true,
-        "**/.tox": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/build": true
-    },
-    "search.useGlobalIgnoreFiles": true,
-    // Terminal
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    // Telemetry
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    // Update
-    "update.enableWindowsBackgroundUpdates": false,
-    "update.mode": "manual",
-    // Breadcrumbs
-    "breadcrumbs.enabled": true,
-    // IntelliCode
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    // Merge Conflicts
-    "merge-conflict.autoNavigateNextConflict.enabled": true,
-    // Languages
-    "cSpell.language": "en,pl",
-    // Git
-    "git.autofetch": true,
-    "git.fetchOnPull": true,
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "gitlens.blame.ignoreWhitespace": true,
-    // Live Share
-    "liveshare.populateGitCoAuthors": "never",
-    "liveshare.allowGuestDebugControl": true,
-    "liveshare.allowGuestTaskControl": true,
-    // Prettier
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
-    "prettier.trailingComma": "all",
-    "prettier.semi": true,
-    "prettier.printWidth": 100,
-    // ESLint
-    "eslint.enable": true,
-    "eslint.run": "onSave",
-    "eslint.alwaysShowStatus": true,
-    "eslint.format.enable": true,
-    "eslint.lintTask.enable": true,
-    "eslint.validate": [
-        "javascript",
-        "vue",
-        "html"
-    ],
-    // JSON
-    "json.format.enable": true,
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features",
-    },
-    // HTML
-    "html.format.endWithNewline": true,
-    "html.format.indentHandlebars": true,
-    "html.format.indentInnerHtml": true,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    // CSS
-    "css.lint.boxModel": "warning",
-    "css.lint.float": "warning",
-    "css.lint.duplicateProperties": "warning",
-    "css.lint.important": "warning",
-    "css.lint.universalSelector": "warning",
-    "css.lint.zeroUnits": "warning",
-    // SASS & SCSS
-    "[scss]": {
-        "sass.lint.enable": true,
-    },
-    // JavaScript
-    "[javascript]": {
-        "editor.tabSize": 2,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-    },
-    "javascript.preferences.quoteStyle": "single",
-    "javascript.preferences.useAliasesForRenames": true,
-    "javascript.preferences.importModuleSpecifier": "non-relative",
-    "javascript.implicitProjectConfig.checkJs": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.autoClosingTags": true,
-    "javascript.suggest.completeFunctionCalls": true,
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    // TypeScript
-    "typescript.format.enable": true,
-    "typescript.validate.enable": true,
-    "typescript.suggest.enabled": true,
-    "typescript.preferences.quoteStyle": "single",
-    "typescript.preferences.useAliasesForRenames": true,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "typescript.tsdk": "./node_modules/typescript/lib",
-    "vsintellicode.typescript.completionsEnabled": true,
-    "javascript.validate.enable": true,
-    // TypeScript React .tsx
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
-    // Vue
-    "vetur.format.defaultFormatterOptions": {
-        "[vue, js]": {
-            "singleQuote": true,
-            "eslintIntegration": true,
-        }
-    },
-    // Python
-    "[python]": {
-        "editor.tabSize": 4,
-        "editor.autoClosingQuotes": "languageDefined"
-    },
-    "python.pythonPath": "/Users/marcin.kaminski/Library/Python/3.9/bin",
-    "python.autoComplete.extraPaths": [
-        "/Users/marcin.kaminski/Library/Python/3.9/bin"
-    ],
-    "python.sortImports.args": [
-        "-rc",
-        "--atomic"
-    ],
-    "python.autoComplete.addBrackets": true,
-    "python.formatting.provider": "autopep8",
-    "python.testing.pytestEnabled": true,
-    "python.linting.banditEnabled": true,
-    "python.linting.enabled": true,
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.pycodestyleEnabled": true,
-    "python.linting.pylintPath": "/Users/marcin.kaminski/Library/Python/3.9/bin/pylint",
-    "python.linting.pylintArgs": [
-        "--load-plugins",
-        "pylint_django",
-        "--in-place",
-        "--aggressive"
-    ],
-    "python.linting.pycodestyleArgs": [
-        "--max-line-length=120"
-    ],
-    "python.linting.ignorePatterns": [
-        ".vscode/*.py",
-        "**/site-packages/**/*.py",
-        "**/.git",
-        "**/.svn",
-        "**/.hg",
-        "**/CVS",
-        "**/.DS_Store",
-        "**/*.pyc",
-        "**/__pycache__/"
-    ],
-    "python.languageServer": "Microsoft",
-    // C++
-    "C_Cpp.updateChannel": "Insiders",
-    "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+      "source.fixAll.eslint": false,
+      "source.fixAll.tslint": false,
+      "source.fixAll.stylelint": false
     }
+  },
+  "js/ts.implicitProjectConfig.checkJs": true,
+  // JavaScript
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.useAliasesForRenames": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.validate.enable": false,
+  "javascript.suggest.enabled": true,
+  "javascript.autoClosingTags": true,
+  "javascript.format.enable": true,
+  // TypeScript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.useAliasesForRenames": true,
+  "vsintellicode.typescript.completionsEnabled": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.validate.enable": true,
+  "typescript.suggest.enabled": true,
+  "typescript.autoClosingTags": true,
+  "typescript.format.enable": true,
+  // Vue
+  "vetur.format.defaultFormatterOptions": {
+    "[vue, js]": {
+      "eslintIntegration": true
+    }
+  },
+  // Python
+  "[python]": {
+    "editor.autoClosingQuotes": "languageDefined"
+  },
+  "python.pythonPath": "/Users/marcin.kaminski/Library/Python/3.9/bin",
+  "python.autoComplete.extraPaths": [
+    "/Users/marcin.kaminski/Library/Python/3.9/bin"
+  ],
+  "python.sortImports.args": ["-rc", "--atomic"],
+  "python.formatting.provider": "autopep8",
+  "python.testing.pytestEnabled": true,
+  "python.linting.banditEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pylintPath": "/Users/marcin.kaminski/Library/Python/3.9/bin/pylint",
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "pylint_django",
+    "--in-place",
+    "--aggressive"
+  ],
+  "python.linting.pycodestyleArgs": ["--max-line-length=120"],
+  "python.linting.ignorePatterns": [
+    ".vscode/*.py",
+    "**/site-packages/**/*.py",
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/*.pyc",
+    "**/__pycache__/"
+  ],
+  "python.languageServer": "Default"
 }
