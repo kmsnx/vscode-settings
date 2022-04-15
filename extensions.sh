@@ -16,7 +16,6 @@ code --install-extension kisstkondoros.vscode-codemetrics
 code --install-extension magicstack.MagicPython
 code --install-extension mikestead.dotenv
 code --install-extension mrmlnc.vscode-json5
-code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-dotnettools.vscode-dotnet-runtime
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
@@ -26,16 +25,19 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension naumovs.color-highlight
 code --install-extension octref.vetur
+code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension sburg.vscode-javascript-booster
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-polish
 code --install-extension streetsidesoftware.code-spell-checker-swedish
+code --install-extension styled-components.vscode-styled-components
 code --install-extension syler.sass-indented
 code --install-extension thomas-baumgaertner.vcl
 code --install-extension tomoki1207.pdf
 code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
 code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension VisualStudioExptTeam.vscodeintellicode-completions
 code --install-extension VisualStudioExptTeam.vscodeintellicode-insiders
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension Vtrois.gitmoji-vscode
