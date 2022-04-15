@@ -26,7 +26,6 @@
   "editor.formatOnPaste": true,
   "editor.gotoLocation.multipleImplementations": "peek",
   "editor.gotoLocation.multipleDeclarations": "peek",
-  "editor.insertSpaces": true,
   "editor.smoothScrolling": true,
   "editor.suggestSelection": "first",
   "editor.codeActionsOnSave": {
@@ -199,5 +198,16 @@
     "**/*.pyc",
     "**/__pycache__/"
   ],
-  "python.languageServer": "Default"
+  "python.languageServer": "Default",
+  "bracketPairColorizer.depreciation-notice": false,
+  "redhat.telemetry.enabled": false,
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
 }
