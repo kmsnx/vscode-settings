@@ -1,6 +1,7 @@
 code --install-extension aaron-bond.better-comments
 code --install-extension christian-kohler.path-intellisense
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension eamodio.gitlens
 code --install-extension ecmel.vscode-html-css
 code --install-extension EditorConfig.EditorConfig
@@ -9,10 +10,17 @@ code --install-extension jasonnutter.vscode-codeowners
 code --install-extension jock.svg
 code --install-extension kisstkondoros.vscode-codemetrics
 code --install-extension magicstack.MagicPython
+code --install-extension mikestead.dotenv
 code --install-extension mrmlnc.vscode-json5
 code --install-extension ms-dotnettools.vscode-dotnet-runtime
+code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags
+code --install-extension ms-toolsai.vscode-jupyter-slideshow
 code --install-extension ms-vscode.vscode-typescript-next
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vsliveshare.vsliveshare-audio
@@ -27,6 +35,7 @@ code --install-extension styled-components.vscode-styled-components
 code --install-extension syler.sass-indented
 code --install-extension thomas-baumgaertner.vcl
 code --install-extension tomoki1207.pdf
+code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension VisualStudioExptTeam.vscodeintellicode-completions
 code --install-extension VisualStudioExptTeam.vscodeintellicode-insiders
