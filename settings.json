@@ -1,6 +1,4 @@
 {
-  // Window
-  "window.zoomLevel": -1,
   // Workbench
   "workbench.commandPalette.history": 0,
   "workbench.editor.tabSizing": "shrink",
@@ -74,6 +72,7 @@
   // Telemetry
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+  "redhat.telemetry.enabled": false,
   // Languages
   "cSpell.language": "en,pl,sv",
   // Git
@@ -108,6 +107,22 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Markdown
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  // DotEnd
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  // Shell
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  // XML
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
   },
   // HTML
   "html.format.endWithNewline": true,
@@ -198,16 +213,5 @@
     "**/*.pyc",
     "**/__pycache__/"
   ],
-  "python.languageServer": "Default",
-  "bracketPairColorizer.depreciation-notice": false,
-  "redhat.telemetry.enabled": false,
-  "[dotenv]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  }
+  "python.languageServer": "Default"
 }
