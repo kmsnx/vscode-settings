@@ -1,6 +1,6 @@
 # VS Code Settings ⚙️
 
-These are my VS Code settings optimized for Web development in TypeScript and Python.
+These are my VS Code settings optimized for Web development in JavaScript/TypeScript.
 It's perfect setup for anyone who would like to quickly improve coding expirience in VS Code without too much of a hustle. Enjoy!
 
 ### Install 🔧
