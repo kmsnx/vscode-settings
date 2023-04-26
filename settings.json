@@ -4,6 +4,13 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.editorAssociations": {
+    "*.plist": "default"
+  },
+  // Eztensions
+  "extensions.ignoreRecommendations": true,
+  // Window
+  "window.zoomLevel": -1,
   // Editor
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.minimap.enabled": false,
@@ -15,7 +22,7 @@
   "editor.colorDecorators": true,
   "editor.copyWithSyntaxHighlighting": true,
   "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line-thin",
   "editor.detectIndentation": true,
   "editor.fontFamily": "Menlo, Monaco, Consolas, 'Droid Sans Mono', Inconsolata, 'Courier New', monospace",
@@ -37,19 +44,18 @@
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "onFocusChange",
   "files.exclude": {
-    "**/CVS": true,
-    "**/node_modules": true,
     "**/__pycache__": true,
+    "**/.coverage": true,
     "**/.DS_Store": true,
     "**/.git": true,
-    "**/.vscode": true,
-    "**/.pytest_cache": true,
-    "**/.coverage": true,
-    "**/.pyc": true,
-    "**/.tox": true,
-    "**/.svn": true,
     "**/.hg": true,
-    "**/build": true
+    "**/.pyc": true,
+    "**/.pytest_cache": true,
+    "**/.svn": true,
+    "**/.tox": true,
+    "**/build": true,
+    "**/CVS": true,
+    "**/node_modules": true
   },
   // Search
   "search.exclude": {
@@ -75,6 +81,8 @@
   "redhat.telemetry.enabled": false,
   // Languages
   "cSpell.language": "en,pl,sv",
+  // Debug
+  "debug.node.autoAttach": "disabled",
   // Git
   "git.autofetch": true,
   "git.fetchOnPull": true,
@@ -123,6 +131,10 @@
   // XML
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  // YAML
+  "yaml.schemas": {
+    "file:///Users/marcinkaminski/.vscode/extensions/atlassian.atlascode-3.0.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   // HTML
   "html.format.endWithNewline": true,
@@ -182,36 +194,8 @@
   "[python]": {
     "editor.autoClosingQuotes": "languageDefined"
   },
-  "python.pythonPath": "/Users/marcin.kaminski/Library/Python/3.9/bin",
-  "python.autoComplete.extraPaths": [
-    "/Users/marcin.kaminski/Library/Python/3.9/bin"
-  ],
-  "python.sortImports.args": ["-rc", "--atomic"],
-  "python.formatting.provider": "autopep8",
-  "python.testing.pytestEnabled": true,
-  "python.linting.banditEnabled": true,
-  "python.linting.enabled": true,
-  "python.linting.lintOnSave": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.pycodestyleEnabled": true,
-  "python.linting.pylintPath": "/Users/marcin.kaminski/Library/Python/3.9/bin/pylint",
-  "python.linting.pylintArgs": [
-    "--load-plugins",
-    "pylint_django",
-    "--in-place",
-    "--aggressive"
-  ],
-  "python.linting.pycodestyleArgs": ["--max-line-length=120"],
-  "python.linting.ignorePatterns": [
-    ".vscode/*.py",
-    "**/site-packages/**/*.py",
-    "**/.git",
-    "**/.svn",
-    "**/.hg",
-    "**/CVS",
-    "**/.DS_Store",
-    "**/*.pyc",
-    "**/__pycache__/"
-  ],
-  "python.languageServer": "Default"
+  // Sql
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  }
 }
