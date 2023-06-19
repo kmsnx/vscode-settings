@@ -10,12 +10,16 @@ code --install-extension GitHub.copilot-labs
 code --install-extension GitHub.copilot-nightly
 code --install-extension kisstkondoros.vscode-codemetrics
 code --install-extension mikestead.dotenv
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode.vscode-typescript-next
 code --install-extension naumovs.color-highlight
 code --install-extension redhat.vscode-yaml
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension styled-components.vscode-styled-components
 code --install-extension syler.sass-indented
+code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
+code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension znck.grammarly
