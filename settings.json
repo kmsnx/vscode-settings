@@ -7,10 +7,10 @@
   "workbench.editorAssociations": {
     "*.plist": "default"
   },
-  // Eztensions
-  "extensions.ignoreRecommendations": true,
   // Window
   "window.zoomLevel": -1,
+  // Eztensions
+  "extensions.ignoreRecommendations": true,
   // Editor
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.minimap.enabled": false,
@@ -53,7 +53,6 @@
     "**/.pytest_cache": true,
     "**/.svn": true,
     "**/.tox": true,
-    "**/build": true,
     "**/CVS": true,
     "**/node_modules": true
   },
@@ -78,26 +77,18 @@
   // Telemetry
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  "redhat.telemetry.enabled": false,
   // Languages
   "cSpell.language": "en,pl,sv",
-  // Debug
-  "debug.node.autoAttach": "disabled",
   // Git
   "git.autofetch": true,
   "git.fetchOnPull": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "gitlens.blame.ignoreWhitespace": true,
-  // Live Share
-  "liveshare.populateGitCoAuthors": "never",
-  "liveshare.allowGuestDebugControl": true,
-  "liveshare.allowGuestTaskControl": true,
   // ESLint
   "eslint.enable": true,
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
-  "eslint.alwaysShowStatus": true,
   "eslint.validate": [
     "typescriptreact",
     "javascriptreact",
@@ -106,8 +97,6 @@
     "html",
     "vue"
   ],
-  // SVG
-  "svg.preview.mode": "svg",
   // JSON
   "json.format.enable": true,
   "[json]": {
@@ -150,10 +139,6 @@
   "css.lint.important": "warning",
   "css.lint.duplicateProperties": "error",
   "css.lint.universalSelector": "warning",
-  // SASS & SCSS
-  "[scss]": {
-    "sass.lint.enable": true
-  },
   // JavaScript / Typescript
   "[javascript,javascriptreact,typescript,typescriptreact]": {
     "editor.formatOnSave": false,
@@ -177,19 +162,12 @@
   // TypeScript
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.useAliasesForRenames": true,
-  "vsintellicode.typescript.completionsEnabled": true,
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.tsdk": "./node_modules/typescript/lib",
   "typescript.validate.enable": true,
   "typescript.suggest.enabled": true,
   "typescript.autoClosingTags": true,
   "typescript.format.enable": true,
-  // Vue
-  "vetur.format.defaultFormatterOptions": {
-    "[vue, js]": {
-      "eslintIntegration": true
-    }
-  },
   // Python
   "[python]": {
     "editor.autoClosingQuotes": "languageDefined"
