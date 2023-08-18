@@ -7,8 +7,6 @@
   "workbench.editorAssociations": {
     "*.plist": "default"
   },
-  // Window
-  "window.zoomLevel": -1,
   // Eztensions
   "extensions.ignoreRecommendations": true,
   // Editor
@@ -33,10 +31,15 @@
   "editor.gotoLocation.multipleDeclarations": "peek",
   "editor.smoothScrolling": true,
   "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true
+    "source.fixAll": false,
+    "source.fixAll.eslint": false
   },
+  // Window
+  "window.zoomLevel": -1,
+  // Terminal
+  "terminal.integrated.env.osx": {},
   // Files
   "files.eol": "\n",
   "files.insertFinalNewline": true,
@@ -151,7 +154,7 @@
   },
   "js/ts.implicitProjectConfig.checkJs": true,
   // JavaScript
-  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.preferences.useAliasesForRenames": true,
   "javascript.suggest.completeFunctionCalls": true,
