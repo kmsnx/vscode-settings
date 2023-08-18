@@ -80,6 +80,7 @@
   // Telemetry
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   // Languages
   "cSpell.language": "en,pl,sv",
   // Git
